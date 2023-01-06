@@ -1,0 +1,15 @@
+---
+import {services}  from '../../config/service.json';
+---
+
+
+<div class="grid">
+   {
+      services.map(service =>(
+         <i class:list={service.icon}></i>
+         <h2 class="title">{service.title}</h2>
+         <p class="paragraph">{service.description}</p>
+
+      ))
+   }
+</div>

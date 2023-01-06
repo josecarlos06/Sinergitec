@@ -1,0 +1,14 @@
+---
+import { customers } from '../../config/customers.json';
+---
+<section class="customer customer__grid">
+   {
+      customers.map( customer => (
+         <div class="customer__item">
+            <p class="item__number">{customer.number}</p>
+            <h2 class="title">{customer.title}</h2>
+            <p class="paragraph">{customer.description}</p>
+         </div>
+      ))
+   }
+</section>

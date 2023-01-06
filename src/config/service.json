@@ -1,0 +1,24 @@
+{
+   "services" : [
+      {
+         "title" : "Desarrollo de software",
+         "description" : "Built by developers for developers. Check the foundation and you will find everything inside our documentation",
+         "icon" : "bx bxs-buildings color-green"
+      },
+      {
+         "title" : "Desarrollo de software",
+         "description" : "Built by developers for developers. Check the foundation and you will find everything inside our documentation",
+         "icon" : "bx bxs-buildings color-green"
+      },
+      {
+         "title" : "Desarrollo de software",
+         "description" : "Built by developers for developers. Check the foundation and you will find everything inside our documentation",
+         "icon" : "bx bxs-buildings color-green"
+      },
+      {
+         "title" : "Desarrollo de software",
+         "description" : "Built by developers for developers. Check the foundation and you will find everything inside our documentation",
+         "icon" : "bx bxs-buildings color-green"
+      }
+   ]
+}
