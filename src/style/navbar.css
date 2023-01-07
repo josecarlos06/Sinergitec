@@ -7,7 +7,7 @@
    left: 0;
    right:0;
    background:rgb(255 255 255/.97);
-   padding:1rem 5rem;
+   padding:1rem 2rem;
    border-radius:var(--borderR);
    overflow: hidden;
    box-shadow: 0px 0px 12px 0px rgba(128, 128, 128, 0.231);
@@ -31,7 +31,7 @@
    border-radius:.5rem;
 }
 .nav__ul{
-   display: none;
+   display:var(--active);
    gap:2rem;
    width:100%;
    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
@@ -53,7 +53,7 @@
 .bx{
    font-size:var(--paragraphSize);;
 }
-.toggles .bx{
+.toggles{
    font-size:3rem;
 }
 .nav__link-active{
@@ -64,7 +64,7 @@
 }
 
 .actived{
-   display: flex;
+   --active: flex;
    flex-direction: column;
    padding:2rem .5rem;
    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
