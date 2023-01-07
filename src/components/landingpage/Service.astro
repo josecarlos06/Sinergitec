@@ -1,15 +1,26 @@
 ---
 import {services}  from '../../config/service.json';
+import video from '../../images/video.mp4';
 ---
 
 
-<div class="grid">
-   {
-      services.map(service =>(
-         <i class:list={service.icon}></i>
-         <h2 class="title">{service.title}</h2>
-         <p class="paragraph">{service.description}</p>
+<section class="services services__grid mt">
+      <div class="service__item">
+         <figure class="service__image">
+            <video src={video} class="service__video" autoplay loop controls muted></video>
+         </figure>
+      </div>
 
-      ))
-   }
-</div>
+      <div class="service__grid">
+         {
+            services.map(service =>(
+               <div class="service__item">                  
+                  <i class:list={service.icon}></i>
+                  <h2 class="title">{service.title}</h2>
+                  <p class="paragraph">{service.description}</p>
+               </div>
+
+            ))
+         }
+      </div>
+</section>

@@ -5,10 +5,33 @@ import { customers } from '../../config/customers.json';
    {
       customers.map( customer => (
          <div class="customer__item">
-            <p class="item__number">{customer.number}</p>
+            <p class="item__number" data-val={customer.number}></p>
             <h2 class="title">{customer.title}</h2>
             <p class="paragraph">{customer.description}</p>
          </div>
       ))
    }
 </section>
+
+
+<script is:raw>
+   const itemNumbers = document.querySelectorAll('.item__number');
+   const interval = 3500;
+
+
+   itemNumbers.forEach((itemNumber)=>{
+      let start = 0;
+      let endValue = parseInt(itemNumber.getAttribute('data-val'));
+
+      let duration = Math.floor(interval / endValue);
+      let counter = setInterval(()=>{
+         start +=1;
+         itemNumber.textContent = start + "+";
+         if(start == endValue){
+            clearInterval(counter)
+         }
+      },duration)
+
+   })
+
+</script>

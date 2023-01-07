@@ -1,0 +1,43 @@
+---
+---
+
+<nav class="nav">
+   <div class="nav__toggle">
+      <a href="#" class="logo">sinergitec</a>
+
+      <div class="toggles">
+         <i class='bx bx-menu' style='color:#344767'  ></i>
+      </div> 
+   </div>
+   
+
+   <ul class="nav__ul">
+      <li class="nav__li">
+         <a href="#" class="nav__link"> <i class='bx bx-home-alt-2' style='color:#344767'  ></i> Inicio</a>
+      </li>
+      <li class="nav__li">
+         <a href="#" class="nav__link"><i class='bx bx-laptop'></i>Servicios</a>
+      </li>
+      <li class="nav__li">
+         <a href="#" class="nav__link"><i class='bx bx-support' style='color:#344767' ></i>Tecnologias</a>
+      </li>
+      <li class="nav__li">
+         <a href="#" class="nav__link"><i class='bx bxs-business'></i>Industrias</a>
+      </li>
+      <li class="nav__li">
+         <a href="#" class="nav__link nav__link-active"><i class='bx bxs-contact' style='color:#ffffff'  ></i> Contacto</a>
+      </li>
+   </ul>
+</nav>
+
+<script is:inline>
+   const toggle = document.querySelector('.toggles');
+   toggle.addEventListener('click',()=>{
+   const navUl = document.querySelector('.nav__ul');
+      if(navUl.classList.contains('actived')){
+         navUl.classList.remove('actived') 
+      }else{
+         navUl.classList.add('actived')
+      }
+   })
+ </script>

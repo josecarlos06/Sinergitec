@@ -1,17 +1,17 @@
 {
    "customers" : [
    {
-      "number" : "50+",
+      "number" : 50,
       "title" : "Clientes Satisfechos",
       "description" : "loremcadsadsadasdasdasdasdas"
    },
    {
-      "number" : "50+",
+      "number" : 20,
       "title" : "Clientes Satisfechos",
       "description" : "loremcadsadsadasdasdasdasdas"
    },
    {
-      "number" : "50+",
+      "number" :200,
       "title" : "Clientes Satisfechos",
       "description" : "loremcadsadsadasdasdasdasdas"
    }
