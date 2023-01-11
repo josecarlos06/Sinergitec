@@ -14,6 +14,7 @@
    --paragraphSize:1.5rem;
    --borderR: .7rem;
    --active:none;
+   --event:polygon(0 0, 100% 0, 100% 0, 0 0);;
 }
 
 html {
@@ -72,6 +73,9 @@ a,h1,h2,h3,li,p,ul,figure {
 }
 .mt{
    margin-top:7rem;
+}
+.text-left{
+   text-align: left;
 }
 [class*="container"]{
    max-width:1800px;
@@ -134,13 +138,47 @@ a,h1,h2,h3,li,p,ul,figure {
 .service__item{
    height:100%;
    width:100%;
-   margin: 0 auto;
+}
+.service__image{
+   overflow: hidden;
+   border-radius:var(--borderR);
+   padding:1rem 7rem;
 }
 .service__video{
    height:30rem;
-   border-radius:var(--borderR);
    border: none;
+   border-radius:var(--borderR);
 }
+.benefits{
+   max-width:70rem;
+   text-align: center;
+   margin: 0 auto;
+}
+.benefits .title{
+   display: inline-block;
+   background:var(--green);
+   color:var(--blanco);
+   border-radius: var(--borderR);
+   padding:.5rem 1rem;
+   font-size:1.6rem;
+}
+.benefits__title{
+   margin-bottom:2rem;
+   font-size:3rem;
+   color: var(--textColor);
+   font-weight: bold;
+}
+.banner{
+   background:linear-gradient(to right, rgb(0 0 0/.40) 0%, rgb(0 0 0/.40) 50%, rgb(0 0 0/.40) 100%),url(../images/image.jpg) no-repeat center;
+   background-size: cover;
+   padding:10rem 2rem;
+   border-radius:var(--borderR);
+}
+.mwidth{
+   max-width:70rem;
+   word-wrap: break-word;
+}
+
 @media(min-width:768px){
    .services__grid, .service__grid{
       grid-template-columns:repeat(2,1fr);
