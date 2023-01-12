@@ -16,16 +16,16 @@ import { customers } from '../../config/customers.json';
 
 <script is:raw>
    const itemNumbers = document.querySelectorAll('.item__number');
-   const interval = 3500;
+   const interval = 4500;
 
 
    itemNumbers.forEach((itemNumber)=>{
       let start = 0;
-      let endValue = parseInt(itemNumber.getAttribute('data-val'));
+      let endValue = Number(itemNumber.getAttribute('data-val'));
 
       let duration = Math.floor(interval / endValue);
       let counter = setInterval(()=>{
-         start +=1;
+         start += 1;
          itemNumber.textContent = start + "+";
          if(start == endValue){
             clearInterval(counter)

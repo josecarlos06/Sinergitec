@@ -2,18 +2,18 @@
    "customers" : [
    {
       "number" : 50,
-      "title" : "Clientes Satisfechos",
-      "description" : "loremcadsadsadasdasdasdasdas"
+      "title" : "Projects",
+      "description" : "Of “high-performing” level are led by a certified project manager"
    },
    {
       "number" : 20,
-      "title" : "Clientes Satisfechos",
-      "description" : "loremcadsadsadasdasdasdasdas"
+      "title" : "Support",
+      "description" : "Actively engage team members that finishes on time"
    },
    {
       "number" :200,
-      "title" : "Clientes Satisfechos",
-      "description" : "loremcadsadsadasdasdasdasdas"
+      "title" : "Hours",
+      "description" : "That meets quality standards required by our users"
    }
 ]
 }

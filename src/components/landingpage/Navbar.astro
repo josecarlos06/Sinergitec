@@ -4,10 +4,7 @@
 <nav class="nav">
    <div class="nav__toggle">
       <a href="#" class="logo">sinergitec</a>
-
-      
-         <i class='bx bx-menu toggles' style='color:#344767'  ></i>
-      
+      <i class='bx bx-menu toggles' style='color:#344767'  ></i>
    </div>
    
 
@@ -34,10 +31,6 @@
    const toggle = document.querySelector('.toggles');
    toggle.addEventListener('click',()=>{
    const navUl = document.querySelector('.nav__ul');
-      if(navUl.classList.contains('actived')){
-         navUl.classList.remove('actived') 
-      }else{
-         navUl.classList.add('actived')
-      }
+      navUl.classList.toggle('actived')
    })
  </script>
